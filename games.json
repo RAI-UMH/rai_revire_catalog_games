@@ -5,6 +5,36 @@
       "name": "FastCar",
       "version": "1.0.0",
       "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/FastCar.zip"
-    }
+    },
+    {
+      "id": "BirdTravelling",
+      "name": "BirdTravelling",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/BirdTravelling.zip"
+    },
+    {
+      "id": "DesPickApplesBird",
+      "name": "DesPickApplesBird",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/DesPickApplesBird.zip"
+    },
+    {
+      "id": "FactoryTask",
+      "name": "FactoryTask",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/FactoryTask.zip"
+    },
+    {
+      "id": "HitTask",
+      "name": "HitTask",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/HitTask.zip"
+    },
+    {
+      "id": "Roulette2D",
+      "name": "Roulette2D",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/Roulette2D.zip"
+    },
   ]
 }
