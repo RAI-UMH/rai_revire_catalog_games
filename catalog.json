@@ -1,6 +1,6 @@
 {
-  "Version": 10,
-  "PublishedAt": "2026-07-08T12:43:03.0388949Z",
+  "Version": 3,
+  "PublishedAt": "2026-07-15T10:38:46.0081283Z",
   "Dispositivos": [
     {
       "Id": 1,
@@ -70,7 +70,7 @@
       "Descripcion": "Mueve el cubo verde dentro del cuadrado, evitar chocar con las figuras azules en movimiento.  \u00A1No dejes que te atrapen! ",
       "Ejecutable": "Impossible.exe",
       "Tipo": 0,
-      "Activo": false
+      "Activo": true
     },
     {
       "Id": 3,
@@ -92,7 +92,7 @@
       "Descripcion": "\u00A1Super tareas! Tenemos que ir al super y hacer una receta, para ello tienes la lista de todos los alimentos y la cantidad que necesitas a tu izquierda. Debes recogerlos en la estanter\u00EDa y llevarlos al carrito o a la bandeja situada en la parte inferior de la pantalla. Luego, separa los platos limpios a la izquierda y los sucios a la derecha. \u00A1Hazlo antes de que se acabe el tiempo, t\u00FA puedes! ",
       "Ejecutable": "Cooking.exe",
       "Tipo": 0,
-      "Activo": false
+      "Activo": true
     },
     {
       "Id": 5,
@@ -114,7 +114,7 @@
       "Descripcion": "\u00A1Recoge manzanas! Usa la mano en pantalla para recoger todas las manzanas que puedas y llevarlas a la cesta iluminada. Pero cuidado, habr\u00E1 un p\u00E1jaro que tambi\u00E9n querr\u00E1 llev\u00E1rselas, \u00A1tienes que ser m\u00E1s r\u00E1pido que \u00E9l!",
       "Ejecutable": "DrawingFig.exe",
       "Tipo": 0,
-      "Activo": false
+      "Activo": true
     },
     {
       "Id": 7,
@@ -124,6 +124,28 @@
       "Icono": "fastcar_ico.png",
       "Descripcion": "Esquiva el tr\u00E1fico en hora punta.",
       "Ejecutable": "FastCar.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 8,
+      "DispositivoId": 1,
+      "Nombre": "La F\u00E1brica",
+      "Fondo": "fondo_a2d10_1.png",
+      "Icono": "a2d10_ico.png",
+      "Descripcion": "\u00A1A la f\u00E1brica! Usa la llave para recoger las cajas que caen alrededor. Ll\u00E9valas al centro o al \u00E1rea iluminada de verde. ",
+      "Ejecutable": "FactoryTask.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 9,
+      "DispositivoId": 1,
+      "Nombre": "Topos en el Jard\u00EDn",
+      "Fondo": "fondo_mole.png",
+      "Icono": "a2d11_ico.png",
+      "Descripcion": "\u00A1Demasiados topos en la huerta! Coloca el mazo encima de cada topo que aparezca para eliminarlos. ",
+      "Ejecutable": "HitTask.exe",
       "Tipo": 0,
       "Activo": true
     }
@@ -192,6 +214,30 @@
     {
       "IdJuego": 7,
       "IdCategoria": 3
+    },
+    {
+      "IdJuego": 8,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 8,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 8,
+      "IdCategoria": 4
+    },
+    {
+      "IdJuego": 9,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 9,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 9,
+      "IdCategoria": 4
     }
   ],
   "Parametros": [
@@ -310,7 +356,7 @@
       "Tipo": "select",
       "Descripcion": "Modo en el que aparecen los objetivos en pantalla",
       "Valor": "Random",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Random\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Random\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Random\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Random\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
     },
     {
       "Id": 14,
@@ -319,7 +365,7 @@
       "Tipo": "select",
       "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
       "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:5,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
     },
     {
       "Id": 15,
@@ -356,6 +402,186 @@
       "Descripcion": "Indica la direcci\u00F3n del desplazamiento del juego. Puede ser de derecha a izquierda o de izquierda a derecha.",
       "Valor": "Izquierda",
       "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
+    },
+    {
+      "Id": 19,
+      "JuegoId": 4,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de manzanas a recoger",
+      "Valor": "10",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
+    },
+    {
+      "Id": 20,
+      "JuegoId": 4,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 21,
+      "JuegoId": 4,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 22,
+      "JuegoId": 4,
+      "NombreParametro": "Modo  de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Lugar de apariciones de las manzanas en la pantalla",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 23,
+      "JuegoId": 4,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "01:30",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 24,
+      "JuegoId": 4,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:7}"
+    },
+    {
+      "Id": 25,
+      "JuegoId": 4,
+      "NombreParametro": "Cestas",
+      "Tipo": "select",
+      "Descripcion": "Cesta en la que depositar las manzanas",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 26,
+      "JuegoId": 4,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Realizar actividad con mano",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
+    },
+    {
+      "Id": 27,
+      "JuegoId": 8,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de cajas que el jugador debe recoger",
+      "Valor": "30",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
+    },
+    {
+      "Id": 28,
+      "JuegoId": 8,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 29,
+      "JuegoId": 8,
+      "NombreParametro": "Modo de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Aparici\u00F3n de las cajas en la pantalla",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 30,
+      "JuegoId": 8,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 31,
+      "JuegoId": 8,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "02:00",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 32,
+      "JuegoId": 8,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:7}"
+    },
+    {
+      "Id": 33,
+      "JuegoId": 9,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de topos que el jugador debe golpear",
+      "Valor": "10",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
+    },
+    {
+      "Id": 34,
+      "JuegoId": 9,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 35,
+      "JuegoId": 9,
+      "NombreParametro": "Modo de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Sentido en el que aparecen los topos en el jard\u00EDn",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 36,
+      "JuegoId": 9,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 37,
+      "JuegoId": 9,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "02:30",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 38,
+      "JuegoId": 9,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:7}"
     }
   ]
 }
