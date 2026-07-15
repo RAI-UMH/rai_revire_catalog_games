@@ -1,0 +1,10 @@
+{
+  "games": [
+    {
+      "id": "FastCar",
+      "name": "FastCar",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RaulMB94/revire-games/releases/latest/download/FastCar.zip"
+    }
+  ]
+}

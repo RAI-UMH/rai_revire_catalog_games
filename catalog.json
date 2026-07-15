@@ -1,0 +1,361 @@
+{
+  "Version": 10,
+  "PublishedAt": "2026-07-08T12:43:03.0388949Z",
+  "Dispositivos": [
+    {
+      "Id": 1,
+      "Nombre": "Rubidium",
+      "Fondo": "rubidium.png",
+      "Icono": "rubidium_ico.png",
+      "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de miembro superior.",
+      "Activo": true
+    },
+    {
+      "Id": 2,
+      "Nombre": "Helium",
+      "Fondo": "helium.png",
+      "Icono": "helium_ico.png",
+      "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de mano.",
+      "Activo": true
+    },
+    {
+      "Id": 3,
+      "Nombre": "Objeto Inteligente",
+      "Fondo": "objeto_inteligente.png",
+      "Icono": "oi_ico.png",
+      "Descripcion": "Dispositivo inteligente para realizar ejercicios de rehabilitaci\u00F3n",
+      "Activo": true
+    }
+  ],
+  "Categorias": [
+    {
+      "Id": 1,
+      "Nombre": "Motor",
+      "Tipo": 2
+    },
+    {
+      "Id": 2,
+      "Nombre": "Cognitiva",
+      "Tipo": 2
+    },
+    {
+      "Id": 3,
+      "Nombre": "2D",
+      "Tipo": 1
+    },
+    {
+      "Id": 4,
+      "Nombre": "3D",
+      "Tipo": 1
+    }
+  ],
+  "Juegos": [
+    {
+      "Id": 1,
+      "DispositivoId": 1,
+      "Nombre": "P\u00E1jaro Esquivador",
+      "Fondo": "fondo_birdtravelling.png",
+      "Icono": "bird1_ico.png",
+      "Descripcion": null,
+      "Ejecutable": "BirdTravelling.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 2,
+      "DispositivoId": 1,
+      "Nombre": "Imposible",
+      "Fondo": "fondo_imposible.png",
+      "Icono": "imposible_ico.png",
+      "Descripcion": "Mueve el cubo verde dentro del cuadrado, evitar chocar con las figuras azules en movimiento.  \u00A1No dejes que te atrapen! ",
+      "Ejecutable": "Impossible.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 3,
+      "DispositivoId": 1,
+      "Nombre": "Ruleta",
+      "Fondo": "fondo_roulette2d.png",
+      "Icono": "ruleta_ico.png",
+      "Descripcion": "Utiliza el puntero blanco para atrapar la bola roja que se ir\u00E1 moviendo por toda la ruleta.  Intenta alcanzarla en l\u00EDnea recta. \u00A1Buena suerte!",
+      "Ejecutable": "Roulette2D.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 4,
+      "DispositivoId": 1,
+      "Nombre": "Supermercado",
+      "Fondo": "fondo_cooking.png",
+      "Icono": "cooking_ico.png",
+      "Descripcion": "\u00A1Super tareas! Tenemos que ir al super y hacer una receta, para ello tienes la lista de todos los alimentos y la cantidad que necesitas a tu izquierda. Debes recogerlos en la estanter\u00EDa y llevarlos al carrito o a la bandeja situada en la parte inferior de la pantalla. Luego, separa los platos limpios a la izquierda y los sucios a la derecha. \u00A1Hazlo antes de que se acabe el tiempo, t\u00FA puedes! ",
+      "Ejecutable": "Cooking.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 5,
+      "DispositivoId": 1,
+      "Nombre": "Recolecta de Manzanas",
+      "Fondo": "fondo_birds.png",
+      "Icono": "cestamanzanas_ico.png",
+      "Descripcion": "\u00A1Recoge manzanas! Usa la mano en pantalla para recoger todas las manzanas que puedas y llevarlas a la cesta iluminada. Pero cuidado, habr\u00E1 un p\u00E1jaro que tambi\u00E9n querr\u00E1 llev\u00E1rselas, \u00A1tienes que ser m\u00E1s r\u00E1pido que \u00E9l!",
+      "Ejecutable": "DesPickApplesBird.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 6,
+      "DispositivoId": 1,
+      "Nombre": "Dibujar",
+      "Fondo": "fondo_drawingfig.png",
+      "Icono": "drawingfig_ico.png",
+      "Descripcion": "\u00A1Recoge manzanas! Usa la mano en pantalla para recoger todas las manzanas que puedas y llevarlas a la cesta iluminada. Pero cuidado, habr\u00E1 un p\u00E1jaro que tambi\u00E9n querr\u00E1 llev\u00E1rselas, \u00A1tienes que ser m\u00E1s r\u00E1pido que \u00E9l!",
+      "Ejecutable": "DrawingFig.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 7,
+      "DispositivoId": 1,
+      "Nombre": "Hora Punta",
+      "Fondo": "fondo_fastcar.png",
+      "Icono": "fastcar_ico.png",
+      "Descripcion": "Esquiva el tr\u00E1fico en hora punta.",
+      "Ejecutable": "FastCar.exe",
+      "Tipo": 0,
+      "Activo": true
+    }
+  ],
+  "JuegoCategorias": [
+    {
+      "IdJuego": 1,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 1,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 2,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 2,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 3,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 3,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 4,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 4,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 4,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 5,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 5,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 6,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 6,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 7,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 7,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 7,
+      "IdCategoria": 3
+    }
+  ],
+  "Parametros": [
+    {
+      "Id": 1,
+      "JuegoId": 1,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo de la actividad (mm:ss)",
+      "Valor": "01:30",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 2,
+      "JuegoId": 1,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 3,
+      "JuegoId": 1,
+      "NombreParametro": "Velocidad",
+      "Tipo": "int",
+      "Descripcion": "Velocidad a la que se mueve la escena",
+      "Valor": "5",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Min\u0022:1,\u0022Max\u0022:10}"
+    },
+    {
+      "Id": 4,
+      "JuegoId": 1,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 5,
+      "JuegoId": 7,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 6,
+      "JuegoId": 7,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 7,
+      "JuegoId": 7,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "01:20",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 8,
+      "JuegoId": 7,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 9,
+      "JuegoId": 7,
+      "NombreParametro": "Velocidad",
+      "Tipo": "int",
+      "Descripcion": "Velocidad con la que se mueve el tr\u00E1fico hacia el jugador",
+      "Valor": "3",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Min\u0022:1,\u0022Max\u0022:10}"
+    },
+    {
+      "Id": 10,
+      "JuegoId": 7,
+      "NombreParametro": "Modo",
+      "Tipo": "select",
+      "Descripcion": "Posici\u00F3n del veh\u00EDculo para jugar",
+      "Valor": "Abajo",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Abajo\u0022,\u0022Arriba\u0022],\u0022Map\u0022:{\u0022Abajo\u0022:\u00220\u0022,\u0022Arriba\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 11,
+      "JuegoId": 3,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de objetivos que el usuario debe alcanzar",
+      "Valor": "20",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
+    },
+    {
+      "Id": 12,
+      "JuegoId": 3,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 13,
+      "JuegoId": 3,
+      "NombreParametro": "Modo de Aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Modo en el que aparecen los objetivos en pantalla",
+      "Valor": "Random",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Random\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Random\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 14,
+      "JuegoId": 3,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 15,
+      "JuegoId": 3,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "05:00",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 16,
+      "JuegoId": 3,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:7}"
+    },
+    {
+      "Id": 17,
+      "JuegoId": 1,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 18,
+      "JuegoId": 1,
+      "NombreParametro": "Direcci\u00F3n de Movimiento",
+      "Tipo": "select",
+      "Descripcion": "Indica la direcci\u00F3n del desplazamiento del juego. Puede ser de derecha a izquierda o de izquierda a derecha.",
+      "Valor": "Izquierda",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
+    }
+  ]
+}
