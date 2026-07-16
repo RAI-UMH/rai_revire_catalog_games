@@ -35,6 +35,12 @@
       "name": "Roulette2D",
       "version": "1.0.0",
       "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/Roulette2D.zip"
+    },
+    {
+      "id": "Impossible",
+      "name": "Impossible",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/Impossible.zip"
     }
   ]
 }
