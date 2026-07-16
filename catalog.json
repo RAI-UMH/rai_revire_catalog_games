@@ -1,6 +1,6 @@
 {
-  "Version": 3,
-  "PublishedAt": "2026-07-15T10:38:46.0081283Z",
+  "Version": 4,
+  "PublishedAt": "2026-07-16T08:54:03.7449885Z",
   "Dispositivos": [
     {
       "Id": 1,
@@ -248,7 +248,7 @@
       "Tipo": "duration",
       "Descripcion": "Tiempo de la actividad (mm:ss)",
       "Valor": "01:30",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     },
     {
       "Id": 2,
@@ -257,7 +257,7 @@
       "Tipo": "int",
       "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
       "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:100,\u0022Max\u0022:350}"
     },
     {
       "Id": 3,
@@ -370,10 +370,10 @@
     {
       "Id": 15,
       "JuegoId": 3,
-      "NombreParametro": "Duraci\u00F3n",
+      "NombreParametro": "Tiempo Objetivo",
       "Tipo": "duration",
-      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
-      "Valor": "05:00",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)",
+      "Valor": "00:10",
       "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     },
     {
@@ -392,7 +392,7 @@
       "Tipo": "select",
       "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
       "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
     },
     {
       "Id": 18,
@@ -568,10 +568,10 @@
     {
       "Id": 37,
       "JuegoId": 9,
-      "NombreParametro": "Duraci\u00F3n",
+      "NombreParametro": "Tiempo Objetivo",
       "Tipo": "duration",
-      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
-      "Valor": "02:30",
+      "Descripcion": "Tiempo del que dispone el jugador para golpear al topo (mm:ss)",
+      "Valor": "00:10",
       "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     },
     {
@@ -582,6 +582,141 @@
       "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
       "Valor": "0",
       "ExtraJson": "{\u0022Position\u0022:7}"
+    },
+    {
+      "Id": 39,
+      "JuegoId": 5,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de manzanas que el jugador debe recoger",
+      "Valor": "10",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
+    },
+    {
+      "Id": 40,
+      "JuegoId": 5,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 41,
+      "JuegoId": 5,
+      "NombreParametro": "Modo de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Lugar en donde aparecen las manzanas para recoger",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 42,
+      "JuegoId": 5,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 43,
+      "JuegoId": 5,
+      "NombreParametro": "Tiempo Objetivo",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar la manzana (mm:ss)",
+      "Valor": "00:10",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 44,
+      "JuegoId": 5,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvo respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:7}"
+    },
+    {
+      "Id": 45,
+      "JuegoId": 5,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Direcci\u00F3n en la que el p\u00E1jaro se dirige hacia las manzanas",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 46,
+      "JuegoId": 5,
+      "NombreParametro": "Cestas",
+      "Tipo": "select",
+      "Descripcion": "Indica en que cesta debe el jugador depositar la manzana",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 47,
+      "JuegoId": 2,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 48,
+      "JuegoId": 2,
+      "NombreParametro": "Dificultad",
+      "Tipo": "select",
+      "Descripcion": "A mayor dificultad, mayor el n\u00FAmero de enemigos y su velocidad",
+      "Valor": "F\u00E1cil",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022F\\u00E1cil\u0022,\u0022Normal\u0022,\u0022Dif\\u00EDcil\u0022],\u0022Map\u0022:{\u0022F\\u00E1cil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dif\\u00EDcil\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 49,
+      "JuegoId": 2,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 50,
+      "JuegoId": 2,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo total que dura el juego (mm:ss)",
+      "Valor": "03:00",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 51,
+      "JuegoId": 2,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 52,
+      "JuegoId": 2,
+      "NombreParametro": "Modo de juego",
+      "Tipo": "select",
+      "Descripcion": "Esquivar libremente o esquivar con alcance de objetivos",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Libre\u0022,\u0022Objetivos\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00220\u0022,\u0022Objetivos\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 53,
+      "JuegoId": 2,
+      "NombreParametro": "Tiempo objetivo",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)",
+      "Valor": "00:05",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     }
   ]
 }
