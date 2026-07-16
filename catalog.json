@@ -92,7 +92,7 @@
       "Descripcion": "\u00A1Super tareas! Tenemos que ir al super y hacer una receta, para ello tienes la lista de todos los alimentos y la cantidad que necesitas a tu izquierda. Debes recogerlos en la estanter\u00EDa y llevarlos al carrito o a la bandeja situada en la parte inferior de la pantalla. Luego, separa los platos limpios a la izquierda y los sucios a la derecha. \u00A1Hazlo antes de que se acabe el tiempo, t\u00FA puedes! ",
       "Ejecutable": "Cooking.exe",
       "Tipo": 0,
-      "Activo": true
+      "Activo": false
     },
     {
       "Id": 5,
@@ -114,7 +114,7 @@
       "Descripcion": "\u00A1Recoge manzanas! Usa la mano en pantalla para recoger todas las manzanas que puedas y llevarlas a la cesta iluminada. Pero cuidado, habr\u00E1 un p\u00E1jaro que tambi\u00E9n querr\u00E1 llev\u00E1rselas, \u00A1tienes que ser m\u00E1s r\u00E1pido que \u00E9l!",
       "Ejecutable": "DrawingFig.exe",
       "Tipo": 0,
-      "Activo": true
+      "Activo": false
     },
     {
       "Id": 7,
