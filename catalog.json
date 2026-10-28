@@ -1,13 +1,13 @@
 {
-  "Version": 5,
-  "PublishedAt": "2026-09-22T10:08:04.4521582Z",
+  "Version": 63,
+  "PublishedAt": "2026-10-28T13:30:08.176286Z",
   "Dispositivos": [
     {
       "Id": 1,
       "Nombre": "Rubidium",
       "Fondo": "rubidium.png",
       "Icono": "rubidium_ico.png",
-      "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de miembro superior.",
+      "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de miembro superior",
       "Activo": true
     },
     {
@@ -53,10 +53,10 @@
     {
       "Id": 1,
       "DispositivoId": 1,
-      "Nombre": "P\u00E1jaro Esquivador",
+      "Nombre": "Esquiva y Vuela",
       "Fondo": "fondo_birdtravelling.png",
       "Icono": "bird1_ico.png",
-      "Descripcion": null,
+      "Descripcion": "Mu\u00E9vete para esquivar los obst\u00E1culos que van apareciendo. \u00A1 No te choques !",
       "Ejecutable": "BirdTravelling.exe",
       "Tipo": 0,
       "Activo": true
@@ -111,7 +111,7 @@
       "Nombre": "Dibujar",
       "Fondo": "fondo_drawingfig.png",
       "Icono": "drawingfig_ico.png",
-      "Descripcion": "\u00A1Recoge manzanas! Usa la mano en pantalla para recoger todas las manzanas que puedas y llevarlas a la cesta iluminada. Pero cuidado, habr\u00E1 un p\u00E1jaro que tambi\u00E9n querr\u00E1 llev\u00E1rselas, \u00A1tienes que ser m\u00E1s r\u00E1pido que \u00E9l!",
+      "Descripcion": "Une los puntos para completar las figuras",
       "Ejecutable": "DrawingFig.exe",
       "Tipo": 0,
       "Activo": true
@@ -261,150 +261,6 @@
   ],
   "Parametros": [
     {
-      "Id": 1,
-      "JuegoId": 1,
-      "NombreParametro": "Duraci\u00F3n",
-      "Tipo": "duration",
-      "Descripcion": "Tiempo de la actividad (mm:ss)",
-      "Valor": "01:30",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 2,
-      "JuegoId": 1,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:100,\u0022Max\u0022:350}"
-    },
-    {
-      "Id": 3,
-      "JuegoId": 1,
-      "NombreParametro": "Velocidad",
-      "Tipo": "int",
-      "Descripcion": "Velocidad a la que se mueve la escena",
-      "Valor": "5",
-      "ExtraJson": "{\u0022Position\u0022:7,\u0022Min\u0022:1,\u0022Max\u0022:10}"
-    },
-    {
-      "Id": 4,
-      "JuegoId": 1,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:5}"
-    },
-    {
-      "Id": 5,
-      "JuegoId": 7,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:100,\u0022Max\u0022:350}"
-    },
-    {
-      "Id": 6,
-      "JuegoId": 7,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
-      "Id": 7,
-      "JuegoId": 7,
-      "NombreParametro": "Duraci\u00F3n",
-      "Tipo": "duration",
-      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
-      "Valor": "01:20",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 8,
-      "JuegoId": 7,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:5}"
-    },
-    {
-      "Id": 9,
-      "JuegoId": 7,
-      "NombreParametro": "Velocidad",
-      "Tipo": "int",
-      "Descripcion": "Velocidad con la que se mueve el tr\u00E1fico hacia el jugador",
-      "Valor": "3",
-      "ExtraJson": "{\u0022Position\u0022:6,\u0022Min\u0022:1,\u0022Max\u0022:10}"
-    },
-    {
-      "Id": 10,
-      "JuegoId": 7,
-      "NombreParametro": "Modo",
-      "Tipo": "select",
-      "Descripcion": "Posici\u00F3n del veh\u00EDculo para jugar",
-      "Valor": "Abajo",
-      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Abajo\u0022,\u0022Arriba\u0022],\u0022Map\u0022:{\u0022Abajo\u0022:\u00220\u0022,\u0022Arriba\u0022:\u00221\u0022}}"
-    },
-    {
-      "Id": 11,
-      "JuegoId": 3,
-      "NombreParametro": "Repeticiones",
-      "Tipo": "int",
-      "Descripcion": "Cantidad de objetivos que el usuario debe alcanzar",
-      "Valor": "20",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
-    },
-    {
-      "Id": 12,
-      "JuegoId": 3,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
-    },
-    {
-      "Id": 13,
-      "JuegoId": 3,
-      "NombreParametro": "Modo de Aparici\u00F3n",
-      "Tipo": "select",
-      "Descripcion": "Modo en el que aparecen los objetivos en pantalla",
-      "Valor": "Random",
-      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Random\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Random\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
-    },
-    {
-      "Id": 14,
-      "JuegoId": 3,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
-      "Id": 15,
-      "JuegoId": 3,
-      "NombreParametro": "Tiempo Objetivo",
-      "Tipo": "duration",
-      "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)",
-      "Valor": "00:10",
-      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 16,
-      "JuegoId": 3,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:7}"
-    },
-    {
       "Id": 17,
       "JuegoId": 1,
       "NombreParametro": "Asistencia",
@@ -423,265 +279,49 @@
       "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
     },
     {
-      "Id": 19,
-      "JuegoId": 4,
-      "NombreParametro": "Repeticiones",
-      "Tipo": "int",
-      "Descripcion": "Cantidad de manzanas a recoger",
-      "Valor": "10",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
-    },
-    {
-      "Id": 20,
-      "JuegoId": 4,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
-    },
-    {
-      "Id": 21,
-      "JuegoId": 4,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
-      "Id": 22,
-      "JuegoId": 4,
-      "NombreParametro": "Modo  de aparici\u00F3n",
-      "Tipo": "select",
-      "Descripcion": "Lugar de apariciones de las manzanas en la pantalla",
-      "Valor": "Aleatorio",
-      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
-    },
-    {
-      "Id": 23,
-      "JuegoId": 4,
+      "Id": 1,
+      "JuegoId": 1,
       "NombreParametro": "Duraci\u00F3n",
       "Tipo": "duration",
-      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Descripcion": "Tiempo de ejecuci\u00F3n de la actividad (mm:ss)",
       "Valor": "01:30",
-      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:9,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     },
     {
-      "Id": 24,
-      "JuegoId": 4,
+      "Id": 4,
+      "JuegoId": 1,
       "NombreParametro": "Orientaci\u00F3n",
       "Tipo": "orientation",
       "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
       "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:7}"
+      "ExtraJson": "{\u0022Position\u0022:5}"
     },
     {
-      "Id": 25,
-      "JuegoId": 4,
-      "NombreParametro": "Cestas",
-      "Tipo": "select",
-      "Descripcion": "Cesta en la que depositar las manzanas",
-      "Valor": "Aleatorio",
-      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
-    },
-    {
-      "Id": 26,
-      "JuegoId": 4,
-      "NombreParametro": "Lateralidad",
-      "Tipo": "select",
-      "Descripcion": "Realizar actividad con mano",
-      "Valor": "Derecha",
-      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
-    },
-    {
-      "Id": 27,
-      "JuegoId": 8,
-      "NombreParametro": "Repeticiones",
-      "Tipo": "int",
-      "Descripcion": "Cantidad de cajas que el jugador debe recoger",
-      "Valor": "30",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
-    },
-    {
-      "Id": 28,
-      "JuegoId": 8,
+      "Id": 2,
+      "JuegoId": 1,
       "NombreParametro": "Rango de movimiento",
       "Tipo": "int",
       "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
       "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:200,\u0022Max\u0022:350}"
     },
     {
-      "Id": 29,
-      "JuegoId": 8,
-      "NombreParametro": "Modo de aparici\u00F3n",
-      "Tipo": "select",
-      "Descripcion": "Aparici\u00F3n de las cajas en la pantalla",
-      "Valor": "Aleatorio",
-      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
-    },
-    {
-      "Id": 30,
-      "JuegoId": 8,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
-      "Id": 31,
-      "JuegoId": 8,
-      "NombreParametro": "Duraci\u00F3n",
-      "Tipo": "duration",
-      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
-      "Valor": "02:00",
-      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 32,
-      "JuegoId": 8,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:7}"
-    },
-    {
-      "Id": 33,
-      "JuegoId": 9,
-      "NombreParametro": "Repeticiones",
+      "Id": 3,
+      "JuegoId": 1,
+      "NombreParametro": "Velocidad",
       "Tipo": "int",
-      "Descripcion": "N\u00FAmero de topos que el jugador debe golpear",
-      "Valor": "10",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
+      "Descripcion": "Velocidad a la que se mueve la escena",
+      "Valor": "3",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Min\u0022:3,\u0022Max\u0022:7}"
     },
     {
-      "Id": 34,
-      "JuegoId": 9,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
-    },
-    {
-      "Id": 35,
-      "JuegoId": 9,
-      "NombreParametro": "Modo de aparici\u00F3n",
-      "Tipo": "select",
-      "Descripcion": "Sentido en el que aparecen los topos en el jard\u00EDn",
-      "Valor": "Aleatorio",
-      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
-    },
-    {
-      "Id": 36,
-      "JuegoId": 9,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
-      "Id": 37,
-      "JuegoId": 9,
-      "NombreParametro": "Tiempo Objetivo",
-      "Tipo": "duration",
-      "Descripcion": "Tiempo del que dispone el jugador para golpear al topo (mm:ss)",
-      "Valor": "00:10",
-      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 38,
-      "JuegoId": 9,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:7}"
-    },
-    {
-      "Id": 39,
-      "JuegoId": 5,
-      "NombreParametro": "Repeticiones",
-      "Tipo": "int",
-      "Descripcion": "Cantidad de manzanas que el jugador debe recoger",
-      "Valor": "10",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
-    },
-    {
-      "Id": 40,
-      "JuegoId": 5,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
-    },
-    {
-      "Id": 41,
-      "JuegoId": 5,
-      "NombreParametro": "Modo de aparici\u00F3n",
-      "Tipo": "select",
-      "Descripcion": "Lugar en donde aparecen las manzanas para recoger",
-      "Valor": "Aleatorio",
-      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
-    },
-    {
-      "Id": 42,
-      "JuegoId": 5,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
-      "Id": 43,
-      "JuegoId": 5,
-      "NombreParametro": "Tiempo Objetivo",
-      "Tipo": "duration",
-      "Descripcion": "Tiempo del que dispone el jugador para alcanzar la manzana (mm:ss)",
-      "Valor": "00:10",
-      "ExtraJson": "{\u0022Position\u0022:6,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 44,
-      "JuegoId": 5,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvo respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:7}"
-    },
-    {
-      "Id": 45,
-      "JuegoId": 5,
-      "NombreParametro": "Lateralidad",
-      "Tipo": "select",
-      "Descripcion": "Direcci\u00F3n en la que el p\u00E1jaro se dirige hacia las manzanas",
-      "Valor": "Derecha",
-      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
-    },
-    {
-      "Id": 46,
-      "JuegoId": 5,
-      "NombreParametro": "Cestas",
-      "Tipo": "select",
-      "Descripcion": "Indica en que cesta debe el jugador depositar la manzana",
-      "Valor": "Aleatorio",
-      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00222\u0022,\u0022Derecha\u0022:\u00221\u0022}}"
-    },
-    {
-      "Id": 47,
+      "Id": 49,
       "JuegoId": 2,
-      "NombreParametro": "Rango de movimiento",
-      "Tipo": "int",
-      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
-      "Valor": "200",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Libre\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00221\u0022}}"
     },
     {
       "Id": 48,
@@ -693,31 +333,13 @@
       "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022F\\u00E1cil\u0022,\u0022Normal\u0022,\u0022Dif\\u00EDcil\u0022],\u0022Map\u0022:{\u0022F\\u00E1cil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dif\\u00EDcil\u0022:\u00222\u0022}}"
     },
     {
-      "Id": 49,
-      "JuegoId": 2,
-      "NombreParametro": "Asistencia",
-      "Tipo": "select",
-      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
-      "Valor": "Libre",
-      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
-    },
-    {
       "Id": 50,
       "JuegoId": 2,
       "NombreParametro": "Duraci\u00F3n",
       "Tipo": "duration",
       "Descripcion": "Tiempo total que dura el juego (mm:ss)",
-      "Valor": "03:00",
-      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
-    },
-    {
-      "Id": 51,
-      "JuegoId": 2,
-      "NombreParametro": "Orientaci\u00F3n",
-      "Tipo": "orientation",
-      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
-      "Valor": "0",
-      "ExtraJson": "{\u0022Position\u0022:5}"
+      "Valor": "02:00",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:5,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     },
     {
       "Id": 52,
@@ -729,31 +351,436 @@
       "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Libre\u0022,\u0022Objetivos\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00220\u0022,\u0022Objetivos\u0022:\u00221\u0022}}"
     },
     {
+      "Id": 51,
+      "JuegoId": 2,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 47,
+      "JuegoId": 2,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
       "Id": 53,
       "JuegoId": 2,
       "NombreParametro": "Tiempo objetivo",
       "Tipo": "duration",
       "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)",
       "Valor": "00:05",
-      "ExtraJson": "{\u0022Position\u0022:8,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:0,\u0022MinSeconds\u0022:1,\u0022MaxSeconds\u0022:20}"
     },
     {
-      "Id": 54,
-      "JuegoId": 10,
+      "Id": 14,
+      "JuegoId": 3,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 13,
+      "JuegoId": 3,
+      "NombreParametro": "Modo de Aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Modo en el que aparecen los objetivos en pantalla",
+      "Valor": "Random",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Random\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Random\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 16,
+      "JuegoId": 3,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 12,
+      "JuegoId": 3,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:100,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 11,
+      "JuegoId": 3,
       "NombreParametro": "Repeticiones",
       "Tipo": "int",
-      "Descripcion": "N\u00FAmero de serie a realizar",
-      "Valor": "5",
-      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:10}"
+      "Descripcion": "Cantidad de objetivos que el usuario debe alcanzar",
+      "Valor": "20",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:99}"
     },
     {
-      "Id": 55,
-      "JuegoId": 10,
+      "Id": 15,
+      "JuegoId": 3,
+      "NombreParametro": "Tiempo Objetivo",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)",
+      "Valor": "00:10",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:0,\u0022MinSeconds\u0022:1,\u0022MaxSeconds\u0022:20}"
+    },
+    {
+      "Id": 21,
+      "JuegoId": 4,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Libre\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 26,
+      "JuegoId": 4,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Realizar actividad con mano",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
+    },
+    {
+      "Id": 24,
+      "JuegoId": 4,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 20,
+      "JuegoId": 4,
       "NombreParametro": "Rango de movimiento",
       "Tipo": "int",
       "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
       "Valor": "200",
       "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 19,
+      "JuegoId": 4,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de series a realizar",
+      "Valor": "10",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:5}"
+    },
+    {
+      "Id": 23,
+      "JuegoId": 4,
+      "NombreParametro": "Tiempo Intento",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de cada pantalla  (mm:ss)",
+      "Valor": "01:30",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:2,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 42,
+      "JuegoId": 5,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 46,
+      "JuegoId": 5,
+      "NombreParametro": "Cestas",
+      "Tipo": "select",
+      "Descripcion": "Indica en que cesta debe el jugador depositar la manzana",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00222\u0022,\u0022Derecha\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 45,
+      "JuegoId": 5,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Direcci\u00F3n en la que el p\u00E1jaro se dirige hacia las manzanas",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 41,
+      "JuegoId": 5,
+      "NombreParametro": "Modo de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Lugar en donde aparecen las manzanas para recoger",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 44,
+      "JuegoId": 5,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvo respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 40,
+      "JuegoId": 5,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 39,
+      "JuegoId": 5,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de manzanas que el jugador debe recoger",
+      "Valor": "10",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:50}"
+    },
+    {
+      "Id": 43,
+      "JuegoId": 5,
+      "NombreParametro": "Tiempo Objetivo",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar la manzana (mm:ss)",
+      "Valor": "00:10",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:0,\u0022MinSeconds\u0022:1,\u0022MaxSeconds\u0022:20}"
+    },
+    {
+      "Id": 65,
+      "JuegoId": 6,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Libre\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 69,
+      "JuegoId": 6,
+      "NombreParametro": "Dificultad",
+      "Tipo": "select",
+      "Descripcion": "Complejidad de las figuras",
+      "Valor": "Normal",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Facil\u0022,\u0022Normal\u0022,\u0022Dificil\u0022],\u0022Map\u0022:{\u0022Facil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dificil\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 68,
+      "JuegoId": 6,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Orientaci\u00F3n del puntero en la pantalla",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 67,
+      "JuegoId": 6,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del Rubidium respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 64,
+      "JuegoId": 6,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Ampitud de trabajo con el Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 63,
+      "JuegoId": 6,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de figuras a dibujar",
+      "Valor": "1",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:5}"
+    },
+    {
+      "Id": 66,
+      "JuegoId": 6,
+      "NombreParametro": "Tiempo total",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n total de la actividad (mm:ss)",
+      "Valor": "04:00",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:9,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 6,
+      "JuegoId": 7,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 7,
+      "JuegoId": 7,
+      "NombreParametro": "Duraci\u00F3n",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "01:20",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:9,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 10,
+      "JuegoId": 7,
+      "NombreParametro": "Modo",
+      "Tipo": "select",
+      "Descripcion": "Posici\u00F3n del veh\u00EDculo para jugar",
+      "Valor": "Abajo",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Abajo\u0022,\u0022Arriba\u0022],\u0022Map\u0022:{\u0022Abajo\u0022:\u00220\u0022,\u0022Arriba\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 8,
+      "JuegoId": 7,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 5,
+      "JuegoId": 7,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 9,
+      "JuegoId": 7,
+      "NombreParametro": "Velocidad",
+      "Tipo": "int",
+      "Descripcion": "Velocidad con la que se mueve el tr\u00E1fico hacia el jugador",
+      "Valor": "3",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Min\u0022:3,\u0022Max\u0022:7}"
+    },
+    {
+      "Id": 30,
+      "JuegoId": 8,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 29,
+      "JuegoId": 8,
+      "NombreParametro": "Modo de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Aparici\u00F3n de las cajas en la pantalla",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 32,
+      "JuegoId": 8,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 28,
+      "JuegoId": 8,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 27,
+      "JuegoId": 8,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "Cantidad de cajas que el jugador debe recoger",
+      "Valor": "30",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:50}"
+    },
+    {
+      "Id": 31,
+      "JuegoId": 8,
+      "NombreParametro": "Tiempo intento",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar la caja (mm:ss)",
+      "Valor": "02:00",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:0,\u0022MinSeconds\u0022:1,\u0022MaxSeconds\u0022:20}"
+    },
+    {
+      "Id": 36,
+      "JuegoId": 9,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 35,
+      "JuegoId": 9,
+      "NombreParametro": "Modo de aparici\u00F3n",
+      "Tipo": "select",
+      "Descripcion": "Sentido en el que aparecen los topos en el jard\u00EDn",
+      "Valor": "Aleatorio",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Aleatorio\u0022,\u0022Horario\u0022,\u0022Antihorario\u0022],\u0022Map\u0022:{\u0022Aleatorio\u0022:\u00220\u0022,\u0022Horario\u0022:\u00221\u0022,\u0022Antihorario\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 38,
+      "JuegoId": 9,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 34,
+      "JuegoId": 9,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 33,
+      "JuegoId": 9,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de topos que el jugador debe golpear",
+      "Valor": "10",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:50}"
+    },
+    {
+      "Id": 37,
+      "JuegoId": 9,
+      "NombreParametro": "Tiempo Intento",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que dispone el jugador para golpear al topo (mm:ss)",
+      "Valor": "00:10",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:59,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     },
     {
       "Id": 56,
@@ -765,24 +792,6 @@
       "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Libre\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00221\u0022}}"
     },
     {
-      "Id": 57,
-      "JuegoId": 10,
-      "NombreParametro": "Tiempo memorizaci\u00F3n",
-      "Tipo": "int",
-      "Descripcion": "Tiempo en (s) para memorizar las figuras",
-      "Valor": "5",
-      "ExtraJson": "{\u0022Position\u0022:5,\u0022Min\u0022:10,\u0022Max\u0022:200}"
-    },
-    {
-      "Id": 58,
-      "JuegoId": 10,
-      "NombreParametro": "Posici\u00F3n",
-      "Tipo": "select",
-      "Descripcion": "Ubicaci\u00F3n en la pantalla de las figuras",
-      "Valor": "Superior",
-      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Superior\u0022,\u0022Inferior\u0022,\u0022Lateral derecho\u0022,\u0022Lateral izquierda\u0022],\u0022Map\u0022:{\u0022Superior\u0022:\u00221\u0022,\u0022Inferior\u0022:\u00220\u0022,\u0022Lateral derecho\u0022:\u00222\u0022,\u0022Lateral izquierda\u0022:\u00223\u0022}}"
-    },
-    {
       "Id": 59,
       "JuegoId": 10,
       "NombreParametro": "Dificultad",
@@ -790,6 +799,15 @@
       "Descripcion": "Aumenta la cantidad de objetos a memorizar",
       "Valor": "F\u00E1cil",
       "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Muy F\\u00E1cil\u0022,\u0022F\\u00E1cil\u0022,\u0022Normal\u0022,\u0022Dif\\u00EDcil\u0022,\u0022Muy Dif\\u00EDcil\u0022],\u0022Map\u0022:{\u0022Muy F\\u00E1cil\u0022:\u00220\u0022,\u0022F\\u00E1cil\u0022:\u00221\u0022,\u0022Normal\u0022:\u00222\u0022,\u0022Dif\\u00EDcil\u0022:\u00223\u0022,\u0022Muy Dif\\u00EDcil\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 62,
+      "JuegoId": 10,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Realizar actividad con mano",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
     },
     {
       "Id": 60,
@@ -810,13 +828,1048 @@
       "ExtraJson": "{\u0022Position\u0022:6}"
     },
     {
-      "Id": 62,
+      "Id": 58,
       "JuegoId": 10,
-      "NombreParametro": "Lateralidad",
+      "NombreParametro": "Posici\u00F3n",
       "Tipo": "select",
-      "Descripcion": "Realizar actividad con mano",
-      "Valor": "Derecha",
-      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Izquierda\u0022,\u0022Derecha\u0022],\u0022Map\u0022:{\u0022Izquierda\u0022:\u00221\u0022,\u0022Derecha\u0022:\u00220\u0022}}"
+      "Descripcion": "Ubicaci\u00F3n en la pantalla de las figuras",
+      "Valor": "Superior",
+      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Superior\u0022,\u0022Inferior\u0022,\u0022Lateral derecho\u0022,\u0022Lateral izquierda\u0022],\u0022Map\u0022:{\u0022Superior\u0022:\u00221\u0022,\u0022Inferior\u0022:\u00220\u0022,\u0022Lateral derecho\u0022:\u00222\u0022,\u0022Lateral izquierda\u0022:\u00223\u0022}}"
+    },
+    {
+      "Id": 55,
+      "JuegoId": 10,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 54,
+      "JuegoId": 10,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de series a realizar",
+      "Valor": "5",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:10}"
+    },
+    {
+      "Id": 57,
+      "JuegoId": 10,
+      "NombreParametro": "Tiempo memorizaci\u00F3n",
+      "Tipo": "int",
+      "Descripcion": "Tiempo en (s) para memorizar las figuras",
+      "Valor": "12",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022Min\u0022:5,\u0022Max\u0022:20}"
+    }
+  ],
+  "DispositivoTraducciones": [
+    {
+      "DispositivoId": 1,
+      "Idioma": "en",
+      "Nombre": "Rubidium",
+      "Descripcion": "Robotic device for upper limb rehabilitation"
+    },
+    {
+      "DispositivoId": 1,
+      "Idioma": "es",
+      "Nombre": "Rubidium",
+      "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de miembro superior."
+    },
+    {
+      "DispositivoId": 2,
+      "Idioma": "en",
+      "Nombre": "Helium",
+      "Descripcion": "Robotic hand rehabilitation device"
+    },
+    {
+      "DispositivoId": 2,
+      "Idioma": "es",
+      "Nombre": "Helium",
+      "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de mano."
+    },
+    {
+      "DispositivoId": 3,
+      "Idioma": "en",
+      "Nombre": "Inteligent Object",
+      "Descripcion": "Smart device for performing rehabilitation exercises"
+    },
+    {
+      "DispositivoId": 3,
+      "Idioma": "es",
+      "Nombre": "Objeto Inteligente",
+      "Descripcion": "Dispositivo inteligente para realizar ejercicios de rehabilitaci\u00F3n"
+    }
+  ],
+  "CategoriaTraducciones": [
+    {
+      "CategoriaId": 1,
+      "Idioma": "en",
+      "Nombre": "Motor"
+    },
+    {
+      "CategoriaId": 1,
+      "Idioma": "es",
+      "Nombre": ""
+    },
+    {
+      "CategoriaId": 2,
+      "Idioma": "en",
+      "Nombre": "Cognitive"
+    },
+    {
+      "CategoriaId": 2,
+      "Idioma": "es",
+      "Nombre": "Cognitiva"
+    },
+    {
+      "CategoriaId": 3,
+      "Idioma": "en",
+      "Nombre": "2D"
+    },
+    {
+      "CategoriaId": 3,
+      "Idioma": "es",
+      "Nombre": ""
+    },
+    {
+      "CategoriaId": 4,
+      "Idioma": "en",
+      "Nombre": "3D"
+    },
+    {
+      "CategoriaId": 4,
+      "Idioma": "es",
+      "Nombre": ""
+    }
+  ],
+  "JuegoTraducciones": [
+    {
+      "JuegoId": 1,
+      "Idioma": "en",
+      "Nombre": "Wing Rush",
+      "Descripcion": "Move to dodge the obstacles that appear. Don\u0027t crash!"
+    },
+    {
+      "JuegoId": 1,
+      "Idioma": "es",
+      "Nombre": "P\u00E1jaro Esquivador",
+      "Descripcion": null
+    },
+    {
+      "JuegoId": 2,
+      "Idioma": "en",
+      "Nombre": "Impossible",
+      "Descripcion": "Move the green cube inside the square, avoiding collisions with the moving blue shapes.  Don\u0027t let them catch you!"
+    },
+    {
+      "JuegoId": 2,
+      "Idioma": "es",
+      "Nombre": "Imposible",
+      "Descripcion": "Mueve el cubo verde dentro del cuadrado, evitar chocar con las figuras azules en movimiento.  \u00A1No dejes que te atrapen! "
+    },
+    {
+      "JuegoId": 3,
+      "Idioma": "en",
+      "Nombre": "Roulette",
+      "Descripcion": "Use the white pointer to catch the red ball as it moves around the roulette wheel.  Try to catch it in a straight line. Good luck!"
+    },
+    {
+      "JuegoId": 3,
+      "Idioma": "es",
+      "Nombre": "Ruleta",
+      "Descripcion": "Utiliza el puntero blanco para atrapar la bola roja que se ir\u00E1 moviendo por toda la ruleta.  Intenta alcanzarla en l\u00EDnea recta. \u00A1Buena suerte!"
+    },
+    {
+      "JuegoId": 4,
+      "Idioma": "en",
+      "Nombre": "Supermarket",
+      "Descripcion": "Super Chores! We have to go to the supermarket and make a recipe. To do this, you\u0027ll find a list of all the ingredients and the amounts you need on your left. You must pick them up from the shelves and put them in the cart or on the tray at the bottom of the screen. Then, separate the clean dishes on the left and the dirty ones on the right. Do it before time runs out\u2014you can do it!"
+    },
+    {
+      "JuegoId": 4,
+      "Idioma": "es",
+      "Nombre": "Supermercado",
+      "Descripcion": "\u00A1Super tareas! Tenemos que ir al super y hacer una receta, para ello tienes la lista de todos los alimentos y la cantidad que necesitas a tu izquierda. Debes recogerlos en la estanter\u00EDa y llevarlos al carrito o a la bandeja situada en la parte inferior de la pantalla. Luego, separa los platos limpios a la izquierda y los sucios a la derecha. \u00A1Hazlo antes de que se acabe el tiempo, t\u00FA puedes! "
+    },
+    {
+      "JuegoId": 5,
+      "Idioma": "en",
+      "Nombre": "Apple Harvest",
+      "Descripcion": "Collect apples! Use your on-screen hand to collect as many apples as you can and put them in the glowing basket. But watch out\u2014there\u0027s a bird that wants to take them too, so you have to be faster than him!"
+    },
+    {
+      "JuegoId": 5,
+      "Idioma": "es",
+      "Nombre": "Recolecta de Manzanas",
+      "Descripcion": "\u00A1Recoge manzanas! Usa la mano en pantalla para recoger todas las manzanas que puedas y llevarlas a la cesta iluminada. Pero cuidado, habr\u00E1 un p\u00E1jaro que tambi\u00E9n querr\u00E1 llev\u00E1rselas, \u00A1tienes que ser m\u00E1s r\u00E1pido que \u00E9l!"
+    },
+    {
+      "JuegoId": 6,
+      "Idioma": "en",
+      "Nombre": "Draw",
+      "Descripcion": "Connect the dots to complete the shapes"
+    },
+    {
+      "JuegoId": 6,
+      "Idioma": "es",
+      "Nombre": "Dibujar",
+      "Descripcion": "Une los puntos para completar las figuras"
+    },
+    {
+      "JuegoId": 7,
+      "Idioma": "en",
+      "Nombre": "Rush Hour",
+      "Descripcion": "Avoid rush-hour traffic."
+    },
+    {
+      "JuegoId": 7,
+      "Idioma": "es",
+      "Nombre": "Hora Punta",
+      "Descripcion": "Esquiva el tr\u00E1fico en hora punta."
+    },
+    {
+      "JuegoId": 8,
+      "Idioma": "en",
+      "Nombre": "The Factory",
+      "Descripcion": "Off to the factory! Use the key to collect the boxes falling all around you. Take them to the center or to the area lit up in green."
+    },
+    {
+      "JuegoId": 8,
+      "Idioma": "es",
+      "Nombre": "La F\u00E1brica",
+      "Descripcion": "\u00A1A la f\u00E1brica! Usa la llave para recoger las cajas que caen alrededor. Ll\u00E9valas al centro o al \u00E1rea iluminada de verde. "
+    },
+    {
+      "JuegoId": 9,
+      "Idioma": "en",
+      "Nombre": "Moles in the Garden",
+      "Descripcion": "\u00A1Tareas geniales! Tenemos que ir al supermercado y preparar una receta. Para ello, a tu izquierda encontrar\u00E1s una lista con todos los ingredientes y las cantidades que necesitas. Debes cogerlos de las estanter\u00EDas y ponerlos en el carrito o en la bandeja que hay en la parte inferior de la pantalla. A continuaci\u00F3n, separa los platos limpios a la izquierda y los sucios a la derecha. Hazlo antes de que se acabe el tiempo. \u00A1T\u00FA puedes!"
+    },
+    {
+      "JuegoId": 9,
+      "Idioma": "es",
+      "Nombre": "Topos en el Jard\u00EDn",
+      "Descripcion": "\u00A1Demasiados topos en la huerta! Coloca el mazo encima de cada topo que aparezca para eliminarlos. "
+    },
+    {
+      "JuegoId": 10,
+      "Idioma": "en",
+      "Nombre": "Memorizing Shapes",
+      "Descripcion": "Ready to memorize! Look at the items on the screen and their order. Pay close attention because they\u0027ll disappear soon. Then you\u0027ll have to put them in the same order."
+    },
+    {
+      "JuegoId": 10,
+      "Idioma": "es",
+      "Nombre": "Memorizar Figuras",
+      "Descripcion": "\u00A1Listo para memorizar! Observa los elementos en pantalla y su orden. Debes estar atento porque luego desaparecer\u00E1n. Despu\u00E9s tendr\u00E1s que colocarlos en el mismo orden."
+    }
+  ],
+  "ParametroTraducciones": [
+    {
+      "JuegoParametroId": 1,
+      "Idioma": "en",
+      "Etiqueta": "Duration",
+      "Descripcion": "Activity duration (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 1,
+      "Idioma": "es",
+      "Etiqueta": "Duraci\u00F3n",
+      "Descripcion": "Tiempo de la actividad (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 2,
+      "Idioma": "en",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Working Range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 2,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 3,
+      "Idioma": "en",
+      "Etiqueta": "Speed",
+      "Descripcion": "Speed at which the scene moves"
+    },
+    {
+      "JuegoParametroId": 3,
+      "Idioma": "es",
+      "Etiqueta": "Velocidad",
+      "Descripcion": "Velocidad a la que se mueve la escena"
+    },
+    {
+      "JuegoParametroId": 4,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 4,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 5,
+      "Idioma": "ca",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 5,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 6,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 6,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 7,
+      "Idioma": "en",
+      "Etiqueta": "Duration",
+      "Descripcion": "Activity duration in (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 7,
+      "Idioma": "es",
+      "Etiqueta": "Duraci\u00F3n",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 8,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 8,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 9,
+      "Idioma": "en",
+      "Etiqueta": "Speed",
+      "Descripcion": "The speed at which traffic moves toward the player"
+    },
+    {
+      "JuegoParametroId": 9,
+      "Idioma": "es",
+      "Etiqueta": "Velocidad",
+      "Descripcion": "Velocidad con la que se mueve el tr\u00E1fico hacia el jugador"
+    },
+    {
+      "JuegoParametroId": 10,
+      "Idioma": "en",
+      "Etiqueta": "Mode",
+      "Descripcion": "Car postion for play"
+    },
+    {
+      "JuegoParametroId": 10,
+      "Idioma": "es",
+      "Etiqueta": "Modo",
+      "Descripcion": "Posici\u00F3n del veh\u00EDculo para jugar"
+    },
+    {
+      "JuegoParametroId": 11,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of goals the user must achieve"
+    },
+    {
+      "JuegoParametroId": 11,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "Cantidad de objetivos que el usuario debe alcanzar"
+    },
+    {
+      "JuegoParametroId": 12,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 12,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 13,
+      "Idioma": "en",
+      "Etiqueta": "Spawn mode",
+      "Descripcion": "How the targets appear on the screen"
+    },
+    {
+      "JuegoParametroId": 13,
+      "Idioma": "es",
+      "Etiqueta": "Modo de Aparici\u00F3n",
+      "Descripcion": "Modo en el que aparecen los objetivos en pantalla"
+    },
+    {
+      "JuegoParametroId": 14,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 14,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 15,
+      "Idioma": "en",
+      "Etiqueta": "Target time",
+      "Descripcion": "Time the player has to reach the goal (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 15,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Objetivo",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 16,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 16,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 17,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 17,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 18,
+      "Idioma": "en",
+      "Etiqueta": "Direction of Motion",
+      "Descripcion": "Indicates the direction of movement in the game. It can be from right to left or from left to right."
+    },
+    {
+      "JuegoParametroId": 18,
+      "Idioma": "es",
+      "Etiqueta": "Direcci\u00F3n de Movimiento",
+      "Descripcion": "Indica la direcci\u00F3n del desplazamiento del juego. Puede ser de derecha a izquierda o de izquierda a derecha."
+    },
+    {
+      "JuegoParametroId": 19,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of sets to be performed"
+    },
+    {
+      "JuegoParametroId": 19,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "Cantidad de series a realizar"
+    },
+    {
+      "JuegoParametroId": 20,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 20,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 21,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 21,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 23,
+      "Idioma": "en",
+      "Etiqueta": "Time to Try",
+      "Descripcion": "Duration of each screen  (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 23,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Intento",
+      "Descripcion": "Duraci\u00F3n de cada pantalla  (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 24,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 24,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 26,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "Perform a task by hand"
+    },
+    {
+      "JuegoParametroId": 26,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Realizar actividad con mano"
+    },
+    {
+      "JuegoParametroId": 27,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of boxes the player must collect"
+    },
+    {
+      "JuegoParametroId": 27,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "Cantidad de cajas que el jugador debe recoger"
+    },
+    {
+      "JuegoParametroId": 28,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 28,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 29,
+      "Idioma": "en",
+      "Etiqueta": "Spawn mode",
+      "Descripcion": "Boxes appearing on the screen"
+    },
+    {
+      "JuegoParametroId": 29,
+      "Idioma": "es",
+      "Etiqueta": "Modo de aparici\u00F3n",
+      "Descripcion": "Aparici\u00F3n de las cajas en la pantalla"
+    },
+    {
+      "JuegoParametroId": 30,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 30,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 31,
+      "Idioma": "en",
+      "Etiqueta": "Attempt time",
+      "Descripcion": "Time the player has to reach the box (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 31,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo intento",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar la caja (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 32,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 32,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 33,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of moles the player must hit"
+    },
+    {
+      "JuegoParametroId": 33,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de topos que el jugador debe golpear"
+    },
+    {
+      "JuegoParametroId": 34,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 34,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 35,
+      "Idioma": "en",
+      "Etiqueta": "Spawn mode",
+      "Descripcion": "The meaning behind the moles appearing in the garden"
+    },
+    {
+      "JuegoParametroId": 35,
+      "Idioma": "es",
+      "Etiqueta": "Modo de aparici\u00F3n",
+      "Descripcion": "Sentido en el que aparecen los topos en el jard\u00EDn"
+    },
+    {
+      "JuegoParametroId": 36,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 36,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 37,
+      "Idioma": "en",
+      "Etiqueta": "Time Attempt",
+      "Descripcion": "Time the player has to hit the mole (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 37,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Intento",
+      "Descripcion": "Tiempo del que dispone el jugador para golpear al topo (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 38,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Position of the device relative to the screen"
+    },
+    {
+      "JuegoParametroId": 38,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 39,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of apples the player must collect"
+    },
+    {
+      "JuegoParametroId": 39,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "Cantidad de manzanas que el jugador debe recoger"
+    },
+    {
+      "JuegoParametroId": 40,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 40,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 41,
+      "Idioma": "en",
+      "Etiqueta": "Spawn mode",
+      "Descripcion": "The place where the apples appear to be picked"
+    },
+    {
+      "JuegoParametroId": 41,
+      "Idioma": "es",
+      "Etiqueta": "Modo de aparici\u00F3n",
+      "Descripcion": "Lugar en donde aparecen las manzanas para recoger"
+    },
+    {
+      "JuegoParametroId": 42,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 42,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 43,
+      "Idioma": "en",
+      "Etiqueta": "Target Time",
+      "Descripcion": "Time the player has to reach the apple (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 43,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Objetivo",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar la manzana (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 44,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 44,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvo respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 45,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "The direction in which the bird is flying toward the apples"
+    },
+    {
+      "JuegoParametroId": 45,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Direcci\u00F3n en la que el p\u00E1jaro se dirige hacia las manzanas"
+    },
+    {
+      "JuegoParametroId": 46,
+      "Idioma": "en",
+      "Etiqueta": "Baskets",
+      "Descripcion": "Indicate which basket the player should put the apple in"
+    },
+    {
+      "JuegoParametroId": 46,
+      "Idioma": "es",
+      "Etiqueta": "Cestas",
+      "Descripcion": "Indica en que cesta debe el jugador depositar la manzana"
+    },
+    {
+      "JuegoParametroId": 47,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 47,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 48,
+      "Idioma": "en",
+      "Etiqueta": "Difficulty",
+      "Descripcion": "The higher the difficulty, the greater the number of enemies and their speed"
+    },
+    {
+      "JuegoParametroId": 48,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "A mayor dificultad, mayor el n\u00FAmero de enemigos y su velocidad"
+    },
+    {
+      "JuegoParametroId": 49,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 49,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 50,
+      "Idioma": "en",
+      "Etiqueta": "Duration",
+      "Descripcion": "Total game duration (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 50,
+      "Idioma": "es",
+      "Etiqueta": "Duraci\u00F3n",
+      "Descripcion": "Tiempo total que dura el juego (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 51,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Position of the device relative to the screen"
+    },
+    {
+      "JuegoParametroId": 51,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 52,
+      "Idioma": "en",
+      "Etiqueta": "Game mode",
+      "Descripcion": "Dodge freely or dodge while targeting enemies"
+    },
+    {
+      "JuegoParametroId": 52,
+      "Idioma": "es",
+      "Etiqueta": "Modo de juego",
+      "Descripcion": "Esquivar libremente o esquivar con alcance de objetivos"
+    },
+    {
+      "JuegoParametroId": 53,
+      "Idioma": "en",
+      "Etiqueta": "Target time",
+      "Descripcion": "Time the player has to reach the goal (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 53,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo objetivo",
+      "Descripcion": "Tiempo del que dispone el jugador para alcanzar el objetivo (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 54,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of sets to be performed"
+    },
+    {
+      "JuegoParametroId": 54,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de serie a realizar"
+    },
+    {
+      "JuegoParametroId": 55,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 55,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 56,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 56,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 57,
+      "Idioma": "en",
+      "Etiqueta": "Memorization time",
+      "Descripcion": "Time (in seconds) to memorize the figures"
+    },
+    {
+      "JuegoParametroId": 57,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo memorizaci\u00F3n",
+      "Descripcion": "Tiempo en (s) para memorizar las figuras"
+    },
+    {
+      "JuegoParametroId": 58,
+      "Idioma": "en",
+      "Etiqueta": "Position",
+      "Descripcion": "Screen placement of the figures"
+    },
+    {
+      "JuegoParametroId": 58,
+      "Idioma": "es",
+      "Etiqueta": "Posici\u00F3n",
+      "Descripcion": "Ubicaci\u00F3n en la pantalla de las figuras"
+    },
+    {
+      "JuegoParametroId": 59,
+      "Idioma": "en",
+      "Etiqueta": "Difficulty",
+      "Descripcion": "Increase the number of items to memorize"
+    },
+    {
+      "JuegoParametroId": 59,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "Aumenta la cantidad de objetos a memorizar"
+    },
+    {
+      "JuegoParametroId": 60,
+      "Idioma": "en",
+      "Etiqueta": "Items",
+      "Descripcion": "Types of items to memorize"
+    },
+    {
+      "JuegoParametroId": 60,
+      "Idioma": "es",
+      "Etiqueta": "Objetos",
+      "Descripcion": "Tipo de objetos a memorizar"
+    },
+    {
+      "JuegoParametroId": 61,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 61,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 62,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "Perform a task by hand"
+    },
+    {
+      "JuegoParametroId": 62,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Realizar actividad con mano"
+    },
+    {
+      "JuegoParametroId": 63,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of figures to draw"
+    },
+    {
+      "JuegoParametroId": 63,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de figuras a dibujar"
+    },
+    {
+      "JuegoParametroId": 64,
+      "Idioma": "en",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 64,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Ampitud de trabajo con el Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 65,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 65,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 66,
+      "Idioma": "en",
+      "Etiqueta": "Total time",
+      "Descripcion": "Total duration of the activity (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 66,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo total",
+      "Descripcion": "Duraci\u00F3n total de la actividad (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 67,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Position of the rubidium relative to the screen"
+    },
+    {
+      "JuegoParametroId": 67,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Total duration of the activity (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 68,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "Cursor orientation on the screen"
+    },
+    {
+      "JuegoParametroId": 68,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Orientaci\u00F3n del puntero en la pantalla"
+    },
+    {
+      "JuegoParametroId": 69,
+      "Idioma": "en",
+      "Etiqueta": "Dificulty",
+      "Descripcion": "Complexity of the figures"
+    },
+    {
+      "JuegoParametroId": 69,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "Complejidad de las figuras"
     }
   ]
 }
