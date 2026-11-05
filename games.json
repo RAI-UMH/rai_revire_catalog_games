@@ -47,12 +47,6 @@
       "name": "MemoryFig",
       "version": "1.0.1",
       "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/MemoryFig.zip"
-    },
-    {
-      "id": "OrderNumbers",
-      "name": "OrderNumbers",
-      "version": "1.0.0",
-      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/download/OrderNumbers-v1.0.0/OrderNumbers.zip"
     }
   ]
 }
