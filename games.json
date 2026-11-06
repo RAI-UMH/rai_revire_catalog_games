@@ -71,6 +71,12 @@
       "name": "Cooking",
       "version": "1.0.0",
       "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/Cooking.zip"
+    },
+    {
+      "id": "DrawingFig",
+      "name": "DrawingFig",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/DrawingFig.zip"
     }
   ]
 }
