@@ -83,6 +83,12 @@
       "name": "LabyrinthyWay",
       "version": "1.0.0",
       "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/LabyrinthyWay.zip"
+    },
+    {
+      "id": "ObjectsMemory",
+      "name": "ObjectsMemory",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/ObjectsMemory.zip"
     }
   ]
 }
