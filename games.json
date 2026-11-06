@@ -53,6 +53,12 @@
       "name": "OrderNumbers",
       "version": "1.0.0",
       "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/OrderNumbers.zip"
+    },
+    {
+      "id": "PiecesTask",
+      "name": "PiecesTask",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/RAI-UMH/rai_revire_catalog_games/releases/latest/download/PiecesTask.zip"
     }
   ]
 }
