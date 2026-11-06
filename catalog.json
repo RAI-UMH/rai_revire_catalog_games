@@ -1,6 +1,6 @@
 {
-  "Version": 63,
-  "PublishedAt": "2026-10-28T13:30:08.176286Z",
+  "Version": 64,
+  "PublishedAt": "2026-11-06T09:05:07.0351916Z",
   "Dispositivos": [
     {
       "Id": 1,
@@ -159,6 +159,61 @@
       "Ejecutable": "MemoryFig.exe",
       "Tipo": 0,
       "Activo": true
+    },
+    {
+      "Id": 11,
+      "DispositivoId": 1,
+      "Nombre": "Puzzle",
+      "Fondo": "fondo_puzzle.png",
+      "Icono": "puzle_ico.png",
+      "Descripcion": "Coloca las piezas en el lugar correcto para completar la imagen",
+      "Ejecutable": "Puzzle.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 12,
+      "DispositivoId": 1,
+      "Nombre": "Encaja",
+      "Fondo": "fondo_a2d12_1.png",
+      "Icono": "a2d12_ico.png",
+      "Descripcion": "Pon a prueba tu l\u00F3gica y visi\u00F3n espacial encajando piezas de diferentes formas dentro del tablero. Completa cada nivel utilizando todas las piezas disponibles, supera desaf\u00EDos cada vez m\u00E1s dif\u00EDciles y entrena tu mente mientras te diviertes.",
+      "Ejecutable": "PiecesTask.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 13,
+      "DispositivoId": 1,
+      "Nombre": "Laberinto",
+      "Fondo": "fondo_a2d3.png",
+      "Icono": "fondo_a2d3_ico.png",
+      "Descripcion": "Lleva la pieza hasta la meta. \u00A1No te pierdas en el laberinto!",
+      "Ejecutable": "LabyrinthyWay.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 14,
+      "DispositivoId": 1,
+      "Nombre": "Las Parejas",
+      "Fondo": "cardkitchen_ico.png",
+      "Icono": "fondo_cardkitchen.png",
+      "Descripcion": "Explora diferentes desaf\u00EDos de memoria emparejando im\u00E1genes, s\u00EDmbolos y objetos antes de que se agote el tiempo. \u00BFSer\u00E1s capaz de encontrar todas las parejas?",
+      "Ejecutable": "ObjectsMemory.exe",
+      "Tipo": 0,
+      "Activo": true
+    },
+    {
+      "Id": 15,
+      "DispositivoId": 1,
+      "Nombre": "Ordena los N\u00FAmeros",
+      "Fondo": "fondo_ordernumbers.png",
+      "Icono": "ordernumbers_ico.png",
+      "Descripcion": "Trata de memorizar y ordenar los n\u00FAmeros seg\u00FAn las indicaciones",
+      "Ejecutable": "OrderNumbers.exe",
+      "Tipo": 0,
+      "Activo": true
     }
   ],
   "JuegoCategorias": [
@@ -256,6 +311,50 @@
     },
     {
       "IdJuego": 10,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 11,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 11,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 12,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 12,
+      "IdCategoria": 4
+    },
+    {
+      "IdJuego": 13,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 13,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 13,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 14,
+      "IdCategoria": 2
+    },
+    {
+      "IdJuego": 14,
+      "IdCategoria": 3
+    },
+    {
+      "IdJuego": 15,
+      "IdCategoria": 1
+    },
+    {
+      "IdJuego": 15,
       "IdCategoria": 3
     }
   ],
@@ -862,6 +961,321 @@
       "Descripcion": "Tiempo en (s) para memorizar las figuras",
       "Valor": "12",
       "ExtraJson": "{\u0022Position\u0022:5,\u0022Min\u0022:5,\u0022Max\u0022:20}"
+    },
+    {
+      "Id": 72,
+      "JuegoId": 11,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 76,
+      "JuegoId": 11,
+      "NombreParametro": "Dificultad",
+      "Tipo": "select",
+      "Descripcion": "Aumenta la cantidad de piezas del puzle",
+      "Valor": "Normal",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Facil\u0022,\u0022Normal\u0022,\u0022Dificil\u0022],\u0022Map\u0022:{\u0022Facil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dificil\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 75,
+      "JuegoId": 11,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Orientaci\u00F3n del cursor en la pantalla",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 74,
+      "JuegoId": 11,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositivo respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 71,
+      "JuegoId": 11,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 70,
+      "JuegoId": 11,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de puzles a realizar",
+      "Valor": "1",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:10}"
+    },
+    {
+      "Id": 77,
+      "JuegoId": 11,
+      "NombreParametro": "Se\u00F1alizaci\u00F3n",
+      "Tipo": "bool",
+      "Descripcion": "Indicador de posici\u00F3n de la pieza",
+      "Valor": "False",
+      "ExtraJson": "{\u0022Position\u0022:9,\u0022Render\u0022:\u0022False\u0022}"
+    },
+    {
+      "Id": 73,
+      "JuegoId": 11,
+      "NombreParametro": "Tiempo Total",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que se dispone para completar todos los puzles",
+      "Valor": "08:00",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:9,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 80,
+      "JuegoId": 12,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 82,
+      "JuegoId": 12,
+      "NombreParametro": "Modo",
+      "Tipo": "select",
+      "Descripcion": "Seguir un orden o tener libertad para completar la pantalla",
+      "Valor": "Seguir",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022Seguir\u0022,\u0022Buscar\u0022],\u0022Map\u0022:{\u0022Seguir\u0022:\u00220\u0022,\u0022Buscar\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 81,
+      "JuegoId": 12,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 79,
+      "JuegoId": 12,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 78,
+      "JuegoId": 12,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de series que se deben completar",
+      "Valor": "1",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:5}"
+    },
+    {
+      "Id": 85,
+      "JuegoId": 13,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Asistido\u0022,\u0022Asistido Necesidad\u0022,\u0022Libre\u0022,\u0022Tunel\u0022,\u0022Tunel Extremos\u0022],\u0022Map\u0022:{\u0022Asistido\u0022:\u00222\u0022,\u0022Asistido Necesidad\u0022:\u00224\u0022,\u0022Libre\u0022:\u00221\u0022,\u0022Tunel\u0022:\u00224\u0022,\u0022Tunel Extremos\u0022:\u00224\u0022}}"
+    },
+    {
+      "Id": 88,
+      "JuegoId": 13,
+      "NombreParametro": "Dificultad",
+      "Tipo": "select",
+      "Descripcion": "Complejidad a la hora de resolver el laberinto",
+      "Valor": "1",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Facil\u0022,\u0022Normal\u0022,\u0022Dificil\u0022],\u0022Map\u0022:{\u0022Facil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dificil\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 87,
+      "JuegoId": 13,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Orientaci\u00F3n en la pantalla del cursor",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 89,
+      "JuegoId": 13,
+      "NombreParametro": "Modo",
+      "Tipo": "select",
+      "Descripcion": "Tipo de gu\u00EDa para mover el puntero blanco",
+      "Valor": "Seguir",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Seguir\u0022,\u0022Guiar\u0022],\u0022Map\u0022:{\u0022Seguir\u0022:\u00220\u0022,\u0022Guiar\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 86,
+      "JuegoId": 13,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 84,
+      "JuegoId": 13,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 83,
+      "JuegoId": 13,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de series del laberinto a completar",
+      "Valor": "1",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:5}"
+    },
+    {
+      "Id": 91,
+      "JuegoId": 14,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Options\u0022:[\u0022Libre\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 95,
+      "JuegoId": 14,
+      "NombreParametro": "Dificultad",
+      "Tipo": "select",
+      "Descripcion": "Aumentar el n\u00FAmero de parejas",
+      "Valor": "Normal",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Facil\u0022,\u0022Normal\u0022,\u0022Dificil\u0022],\u0022Map\u0022:{\u0022Facil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dificil\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 94,
+      "JuegoId": 14,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Orientaci\u00F3n del cursor en la pantalla",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:6,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 93,
+      "JuegoId": 14,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:5}"
+    },
+    {
+      "Id": 90,
+      "JuegoId": 14,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 92,
+      "JuegoId": 14,
+      "NombreParametro": "Tiempo Total",
+      "Tipo": "duration",
+      "Descripcion": "Tiempo del que se dispone para completar las parejas",
+      "Valor": "08:00",
+      "ExtraJson": "{\u0022Position\u0022:4,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:9,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
+    },
+    {
+      "Id": 98,
+      "JuegoId": 15,
+      "NombreParametro": "Asistencia",
+      "Tipo": "select",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium",
+      "Valor": "Libre",
+      "ExtraJson": "{\u0022Position\u0022:3,\u0022Options\u0022:[\u0022Libre\u0022],\u0022Map\u0022:{\u0022Libre\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 102,
+      "JuegoId": 15,
+      "NombreParametro": "Dificultad",
+      "Tipo": "select",
+      "Descripcion": "Aumentar la cantidad de n\u00FAmeros a ordenar",
+      "Valor": "Normal",
+      "ExtraJson": "{\u0022Position\u0022:8,\u0022Options\u0022:[\u0022Facil\u0022,\u0022Normal\u0022,\u0022Dificil\u0022],\u0022Map\u0022:{\u0022Facil\u0022:\u00220\u0022,\u0022Normal\u0022:\u00221\u0022,\u0022Dificil\u0022:\u00222\u0022}}"
+    },
+    {
+      "Id": 101,
+      "JuegoId": 15,
+      "NombreParametro": "Lateralidad",
+      "Tipo": "select",
+      "Descripcion": "Orientaci\u00F3n del cursor en la pantalla",
+      "Valor": "Derecha",
+      "ExtraJson": "{\u0022Position\u0022:7,\u0022Options\u0022:[\u0022Derecha\u0022,\u0022Izquierda\u0022],\u0022Map\u0022:{\u0022Derecha\u0022:\u00220\u0022,\u0022Izquierda\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 104,
+      "JuegoId": 15,
+      "NombreParametro": "Lugar",
+      "Tipo": "select",
+      "Descripcion": "Posici\u00F3n de los n\u00FAmeros en la pantalla",
+      "Valor": "Abajo",
+      "ExtraJson": "{\u0022Position\u0022:10,\u0022Options\u0022:[\u0022Abajo\u0022,\u0022Arriba\u0022],\u0022Map\u0022:{\u0022Abajo\u0022:\u00220\u0022,\u0022Arriba\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 103,
+      "JuegoId": 15,
+      "NombreParametro": "Modo",
+      "Tipo": "select",
+      "Descripcion": "Tipo de orden",
+      "Valor": "Mayor que",
+      "ExtraJson": "{\u0022Position\u0022:9,\u0022Options\u0022:[\u0022Mayor que\u0022,\u0022Menor que\u0022],\u0022Map\u0022:{\u0022Mayor que\u0022:\u00220\u0022,\u0022Menor que\u0022:\u00221\u0022}}"
+    },
+    {
+      "Id": 100,
+      "JuegoId": 15,
+      "NombreParametro": "Orientaci\u00F3n",
+      "Tipo": "orientation",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla",
+      "Valor": "0",
+      "ExtraJson": "{\u0022Position\u0022:6}"
+    },
+    {
+      "Id": 97,
+      "JuegoId": 15,
+      "NombreParametro": "Rango de movimiento",
+      "Tipo": "int",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)",
+      "Valor": "200",
+      "ExtraJson": "{\u0022Position\u0022:2,\u0022Min\u0022:200,\u0022Max\u0022:350}"
+    },
+    {
+      "Id": 96,
+      "JuegoId": 15,
+      "NombreParametro": "Repeticiones",
+      "Tipo": "int",
+      "Descripcion": "N\u00FAmero de series a completar",
+      "Valor": "1",
+      "ExtraJson": "{\u0022Position\u0022:1,\u0022Min\u0022:1,\u0022Max\u0022:20}"
+    },
+    {
+      "Id": 99,
+      "JuegoId": 15,
+      "NombreParametro": "Tiempo Total",
+      "Tipo": "duration",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)",
+      "Valor": "08:00",
+      "ExtraJson": "{\u0022Position\u0022:5,\u0022MinMinutes\u0022:0,\u0022MaxMinutes\u0022:9,\u0022MinSeconds\u0022:0,\u0022MaxSeconds\u0022:59}"
     }
   ],
   "DispositivoTraducciones": [
@@ -876,6 +1290,12 @@
       "Idioma": "es",
       "Nombre": "Rubidium",
       "Descripcion": "Dispositivo rob\u00F3tico de rehabilitaci\u00F3n de miembro superior."
+    },
+    {
+      "DispositivoId": 1,
+      "Idioma": "fr",
+      "Nombre": "Rubidium",
+      "Descripcion": "baguette"
     },
     {
       "DispositivoId": 2,
@@ -1064,6 +1484,66 @@
       "Idioma": "es",
       "Nombre": "Memorizar Figuras",
       "Descripcion": "\u00A1Listo para memorizar! Observa los elementos en pantalla y su orden. Debes estar atento porque luego desaparecer\u00E1n. Despu\u00E9s tendr\u00E1s que colocarlos en el mismo orden."
+    },
+    {
+      "JuegoId": 11,
+      "Idioma": "en",
+      "Nombre": "Puzzle",
+      "Descripcion": "Place the pieces in the correct spots to complete the picture"
+    },
+    {
+      "JuegoId": 11,
+      "Idioma": "es",
+      "Nombre": "Puzzle",
+      "Descripcion": "Coloca las piezas en el lugar correcto para completar la imagen"
+    },
+    {
+      "JuegoId": 12,
+      "Idioma": "en",
+      "Nombre": "Block Master",
+      "Descripcion": "Test your logic and spatial awareness by fitting pieces of different shapes into the board. Complete each level using all the available pieces, overcome increasingly difficult challenges, and exercise your mind while having fun."
+    },
+    {
+      "JuegoId": 12,
+      "Idioma": "es",
+      "Nombre": "Encaja",
+      "Descripcion": "Pon a prueba tu l\u00F3gica y visi\u00F3n espacial encajando piezas de diferentes formas dentro del tablero. Completa cada nivel utilizando todas las piezas disponibles, supera desaf\u00EDos cada vez m\u00E1s dif\u00EDciles y entrena tu mente mientras te diviertes."
+    },
+    {
+      "JuegoId": 13,
+      "Idioma": "en",
+      "Nombre": "Labyrinth",
+      "Descripcion": "Guide the piece to the finish line. Don\u0027t get lost in the maze!"
+    },
+    {
+      "JuegoId": 13,
+      "Idioma": "es",
+      "Nombre": "Laberinto",
+      "Descripcion": "Lleva la pieza hasta la meta. \u00A1No te pierdas en el laberinto!"
+    },
+    {
+      "JuegoId": 14,
+      "Idioma": "en",
+      "Nombre": "Memory Match",
+      "Descripcion": "Take on different memory challenges by matching images, symbols, and objects before time runs out. Will you be able to find all the pairs?"
+    },
+    {
+      "JuegoId": 14,
+      "Idioma": "es",
+      "Nombre": "Las Parejas",
+      "Descripcion": "Explora diferentes desaf\u00EDos de memoria emparejando im\u00E1genes, s\u00EDmbolos y objetos antes de que se agote el tiempo. \u00BFSer\u00E1s capaz de encontrar todas las parejas?"
+    },
+    {
+      "JuegoId": 15,
+      "Idioma": "en",
+      "Nombre": "Sort the Numbers",
+      "Descripcion": "Try to memorize and arrange the numbers according to the instructions."
+    },
+    {
+      "JuegoId": 15,
+      "Idioma": "es",
+      "Nombre": "Ordena los N\u00FAmeros",
+      "Descripcion": "Trata de memorizar y ordenar los n\u00FAmeros seg\u00FAn las indicaciones"
     }
   ],
   "ParametroTraducciones": [
@@ -1870,6 +2350,420 @@
       "Idioma": "es",
       "Etiqueta": "Dificultad",
       "Descripcion": "Complejidad de las figuras"
+    },
+    {
+      "JuegoParametroId": 70,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of puzzles to complete"
+    },
+    {
+      "JuegoParametroId": 70,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de puzles a realizar"
+    },
+    {
+      "JuegoParametroId": 71,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 71,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 72,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 72,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 73,
+      "Idioma": "en",
+      "Etiqueta": "Total Time",
+      "Descripcion": "Time available to complete all the puzzles"
+    },
+    {
+      "JuegoParametroId": 73,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Total",
+      "Descripcion": "Tiempo del que se dispone para completar todos los puzles"
+    },
+    {
+      "JuegoParametroId": 74,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 74,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositivo respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 75,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "The direction in which the bird is flying toward the apples"
+    },
+    {
+      "JuegoParametroId": 75,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Orientaci\u00F3n del cursor en la pantalla"
+    },
+    {
+      "JuegoParametroId": 76,
+      "Idioma": "en",
+      "Etiqueta": "Dificulty",
+      "Descripcion": "Increase the number of puzzle pieces"
+    },
+    {
+      "JuegoParametroId": 76,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "Aumenta la cantidad de piezas del puzle"
+    },
+    {
+      "JuegoParametroId": 77,
+      "Idioma": "en",
+      "Etiqueta": "Signal",
+      "Descripcion": "Workpiece Position Indicator"
+    },
+    {
+      "JuegoParametroId": 77,
+      "Idioma": "es",
+      "Etiqueta": "Se\u00F1alizaci\u00F3n",
+      "Descripcion": "Indicador de posici\u00F3n de la pieza"
+    },
+    {
+      "JuegoParametroId": 78,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of sets to be completed"
+    },
+    {
+      "JuegoParametroId": 78,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de series que se deben completar"
+    },
+    {
+      "JuegoParametroId": 79,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 79,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 80,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 80,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 81,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 81,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 82,
+      "Idioma": "en",
+      "Etiqueta": "Mode",
+      "Descripcion": "Follow a specific order or have the freedom to complete the screen"
+    },
+    {
+      "JuegoParametroId": 82,
+      "Idioma": "es",
+      "Etiqueta": "Modo",
+      "Descripcion": "Seguir un orden o tener libertad para completar la pantalla"
+    },
+    {
+      "JuegoParametroId": 83,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of maze series to complete"
+    },
+    {
+      "JuegoParametroId": 83,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de series del laberinto a completar"
+    },
+    {
+      "JuegoParametroId": 84,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 84,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 85,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 85,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 86,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 86,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 87,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "Cursor Direction on the Screen"
+    },
+    {
+      "JuegoParametroId": 87,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Orientaci\u00F3n en la pantalla del cursor"
+    },
+    {
+      "JuegoParametroId": 88,
+      "Idioma": "en",
+      "Etiqueta": "Dificulty",
+      "Descripcion": "The Complexity of Solving the Maze"
+    },
+    {
+      "JuegoParametroId": 88,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "Complejidad a la hora de resolver el laberinto"
+    },
+    {
+      "JuegoParametroId": 89,
+      "Idioma": "en",
+      "Etiqueta": "Mode",
+      "Descripcion": "Type of guide for moving the white pointer"
+    },
+    {
+      "JuegoParametroId": 89,
+      "Idioma": "es",
+      "Etiqueta": "Modo",
+      "Descripcion": "Tipo de gu\u00EDa para mover el puntero blanco"
+    },
+    {
+      "JuegoParametroId": 90,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 90,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 91,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 91,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 92,
+      "Idioma": "en",
+      "Etiqueta": "Total Time",
+      "Descripcion": "Time allotted to complete the pairs"
+    },
+    {
+      "JuegoParametroId": 92,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Total",
+      "Descripcion": "Tiempo del que se dispone para completar las parejas"
+    },
+    {
+      "JuegoParametroId": 93,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 93,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 94,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "Cursor orientation on the screen"
+    },
+    {
+      "JuegoParametroId": 94,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Orientaci\u00F3n del cursor en la pantalla"
+    },
+    {
+      "JuegoParametroId": 95,
+      "Idioma": "en",
+      "Etiqueta": "Dificulty",
+      "Descripcion": "Increase the number of couples"
+    },
+    {
+      "JuegoParametroId": 95,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "Aumentar el n\u00FAmero de parejas"
+    },
+    {
+      "JuegoParametroId": 96,
+      "Idioma": "en",
+      "Etiqueta": "Repetitions",
+      "Descripcion": "Number of sets to complete"
+    },
+    {
+      "JuegoParametroId": 96,
+      "Idioma": "es",
+      "Etiqueta": "Repeticiones",
+      "Descripcion": "N\u00FAmero de series a completar"
+    },
+    {
+      "JuegoParametroId": 97,
+      "Idioma": "en",
+      "Etiqueta": "Range of motion",
+      "Descripcion": "Working range with Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 97,
+      "Idioma": "es",
+      "Etiqueta": "Rango de movimiento",
+      "Descripcion": "Amplitud de trabajo con Rubidium (mm)"
+    },
+    {
+      "JuegoParametroId": 98,
+      "Idioma": "en",
+      "Etiqueta": "Support",
+      "Descripcion": "Type of assistance offered by Rubidium"
+    },
+    {
+      "JuegoParametroId": 98,
+      "Idioma": "es",
+      "Etiqueta": "Asistencia",
+      "Descripcion": "Tipo de asistencia ofrecida por el Rubidium"
+    },
+    {
+      "JuegoParametroId": 99,
+      "Idioma": "es",
+      "Etiqueta": "Tiempo Total",
+      "Descripcion": "Duraci\u00F3n de la actividad en (mm:ss)"
+    },
+    {
+      "JuegoParametroId": 100,
+      "Idioma": "en",
+      "Etiqueta": "Orientation",
+      "Descripcion": "Device orientation relative to the screen"
+    },
+    {
+      "JuegoParametroId": 100,
+      "Idioma": "es",
+      "Etiqueta": "Orientaci\u00F3n",
+      "Descripcion": "Disposici\u00F3n del dispositvio respecto a la pantalla"
+    },
+    {
+      "JuegoParametroId": 101,
+      "Idioma": "en",
+      "Etiqueta": "Laterality",
+      "Descripcion": "Cursor orientation on the screen"
+    },
+    {
+      "JuegoParametroId": 101,
+      "Idioma": "es",
+      "Etiqueta": "Lateralidad",
+      "Descripcion": "Orientaci\u00F3n del cursor en la pantalla"
+    },
+    {
+      "JuegoParametroId": 102,
+      "Idioma": "en",
+      "Etiqueta": "Dificulty",
+      "Descripcion": "Increase the number of numbers to sort"
+    },
+    {
+      "JuegoParametroId": 102,
+      "Idioma": "es",
+      "Etiqueta": "Dificultad",
+      "Descripcion": "Aumentar la cantidad de n\u00FAmeros a ordenar"
+    },
+    {
+      "JuegoParametroId": 103,
+      "Idioma": "en",
+      "Etiqueta": "Mode",
+      "Descripcion": "Type of sort"
+    },
+    {
+      "JuegoParametroId": 103,
+      "Idioma": "es",
+      "Etiqueta": "Modo",
+      "Descripcion": "Tipo de orden"
+    },
+    {
+      "JuegoParametroId": 104,
+      "Idioma": "en",
+      "Etiqueta": "Position",
+      "Descripcion": "Position of the numbers on the screen"
+    },
+    {
+      "JuegoParametroId": 104,
+      "Idioma": "es",
+      "Etiqueta": "Lugar",
+      "Descripcion": "Posici\u00F3n de los n\u00FAmeros en la pantalla"
     }
   ]
 }
