@@ -1,6 +1,6 @@
 {
-  "Version": 64,
-  "PublishedAt": "2026-11-06T09:05:07.0351916Z",
+  "Version": 65,
+  "PublishedAt": "2026-11-12T14:47:50.3977429Z",
   "Dispositivos": [
     {
       "Id": 1,
@@ -1331,7 +1331,7 @@
     {
       "CategoriaId": 1,
       "Idioma": "es",
-      "Nombre": ""
+      "Nombre": "Motor"
     },
     {
       "CategoriaId": 2,
@@ -1351,7 +1351,7 @@
     {
       "CategoriaId": 3,
       "Idioma": "es",
-      "Nombre": ""
+      "Nombre": "2D"
     },
     {
       "CategoriaId": 4,
@@ -1361,7 +1361,7 @@
     {
       "CategoriaId": 4,
       "Idioma": "es",
-      "Nombre": ""
+      "Nombre": "3D"
     }
   ],
   "JuegoTraducciones": [
